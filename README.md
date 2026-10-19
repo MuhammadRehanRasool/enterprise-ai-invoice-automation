@@ -201,7 +201,7 @@ Open **`Config · Pipeline Settings`**. It is the only node you need to edit:
 - **Stricter policies:** add rules in `Validate · Apply Business Rules`, e.g. vendor allow-list or PO matching. Each rule pushes a message to `issues`.
 
 ---
-
+<!-- 
 ## 🎬 2-Minute Client Demo Script
 
 > **Setup before the call:** n8n canvas open, Google Sheet visible in a second tab, Slack `#ap-invoices` open, three prepared emails in drafts: (A) a clean $1,240 SaaS invoice, (B) a $12,800 consulting invoice, (C) a re-send of invoice A.
@@ -217,7 +217,7 @@ Open **`Config · Pipeline Settings`**. It is the only node you need to edit:
 | **1:40 – 1:52** | Open `Config · Pipeline Settings` | "Thresholds, confidence, channels and currency live in one place. Your policy, not ours. We can point this at QuickBooks, Xero or NetSuite instead of Sheets." |
 | **1:52 – 2:00** | Back to full canvas / ROI table | "At a thousand invoices a month, that's over a hundred staff hours back. Shall we run it on a batch of your real invoices next week?" |
 
----
+--- -->
 
 ## Security & Compliance Notes
 
@@ -225,10 +225,6 @@ Open **`Config · Pipeline Settings`**. It is the only node you need to edit:
 - Document text is treated as untrusted. The system prompt tells the model to ignore instructions embedded in invoices (prompt-injection hardening).
 - Original documents are retained in Drive for audit. Apply your retention policy to the archive folder.
 - Run self-hosted n8n if invoices must stay within your infrastructure or region.
-
-## Credits
-
-Built on and extended from [umur957/n8n-invoice-automation](https://github.com/umur957/n8n-invoice-automation) (MIT). The validation, approval and alerting layer was inspired by the community *Invoice Manager* workflow shared by [meeramnoor16](https://gist.github.com/meeramnoor16/eedf23c8dede444019b16cfd7b3fa448).
 
 ## License
 
