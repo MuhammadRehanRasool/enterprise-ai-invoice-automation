@@ -1,0 +1,23 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*credentials*.json
+!workflows/*.json
+
+# n8n local data
+.n8n/
+n8n_data/
+*.sqlite
+
+# Sample documents (may contain real financial data)
+samples/private/
+*.pdf
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+node_modules/
